@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitness responsive landing page UI</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">fit<span>ness</span></a>
+		<div class="toggle"><img src="toggle.png"></div>
+	</header>
+	<div class="banner">
+		<video src="bg.mp4" autoplay muted loop type="mp4"> </video>
+		<div class="textBox">
+			<h2>Academia do Marcão</h2>
+			<p>Aula por apenas R$50,00 por mês, estamos esperando por você!</p>
+	        <a href="#" id="Button" onmouseenter ="Entrar()" onmouseout="Sair()">Saiba mais</a>
+</div>
+<div class="imgBox">
+    <img src="man.png">
+</div>
+<ul class="sci">
+	<li><a href="#"><img src="facebook.png"></a></li>
+	<li><a href="#"><img src="twitter.png"></a></li>
+	<li><a href="#"><img src="instagram.png"></a></li>
+	
+	
+</ul>
+
+<script>
+	function Entrar(){
+	var bot = window.document.getElementById('Button')
+	bot.innerText = 'Entrar'
+	bot.style.background = 'yellow'
+}
+    function Sair(){
+    	var bot = window.document.getElementById('Button')
+    	bot.innerText = 'Saiba Mais'
+    	bot.style.background = 'white'
+    }
+</script>
+</body>
+</html> 
